@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<!--Here's a worked example of HTML and CSS from Lab 1!
+	HTML consists of a hierarchy of elements.
+	
+	Each element has an opening tag and (most of the time) a closing tag.
+	For example, the whole document is enclosed in the html element, delimited by the <html> and </html> tags.
+	You can also close tags immediately using a slash before the > symbol: A newline is represented by <br />.
+	Each tag can have attributes set as name="value" pairs.
+	For example, the image element needs a source URL for the image file: <img src="dog.jpg" />
+-->
+
+<html>
+<head>
+	<!-- The title shows up in the browser toolbar -->
+	<title>Dog's Homepage</title>
+</head>
+
+<body>
+	<!--A header for the page-->
+	<h1>Hello there</h1>
+
+	<!--My photo-->
+	<img id="photo" src="https://66.media.tumblr.com/0684f90e7e5ac51a76307a83bd84a096/tumblr_obcgntstAf1r6vjaeo4_400.jpg">	
+
+	<!--Divs and spans can be used to logically and structurally organize your page
+		Here we use divs to separate different sections of the page: about, courses, interests and pet information
+		* divs are block elements and are separated by newlines or breaks in the page
+		* spans are inline elements and are displayed without newlines between them
+	-->
+
+	<!--Each div (and any other tag) can have a class and id.
+		The class can be shared with other tags.
+		The id is unique to this tag.
+		The class and id can be selected by CSS rules to style groups of elements differently.
+	-->
+	<div class="section" id="">
+		<!--An h2 header - smaller than the h1 header-->
+		<h2>By Erik Olovsson</h2>
+
+		<!--<p> tags are paragraphs have newlines before and after them-->
+		<p>Hey!</p>
+		<!--The <a> tag is a link.
+			The text between the <a> and </a> tags is the displayed text.
+			The href attribute has the link's target URL.-->
+		<p>I hope you have a delightful day…!</p>		
+	</div>
+<style>
+
+/* .section class selector: set the font of all tags with class="section" */
+		.section {
+			font-family: arial;
+		}
+
+		/* h2 descendants of .section class: set a background color for all h2 text in sections */
+		.section h2 {
+			background-color: rgb(255,255,220);
+			font-family: Georgia;
+			color: maroon;
+		}
+
+	</style>
+</body>
+</html>
